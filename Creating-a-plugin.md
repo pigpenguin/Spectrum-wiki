@@ -87,7 +87,8 @@ Race.Started += (sender, args) => { LocalVehicle.HUD.SetHUDText("Hello, world!")
 This will make the HUD text appear when the race starts by binding the code on the right to the event on the left.
 
 Compile it, then copy it from your project's active configuration output directory, to Spectrum's plugin directory.  
-**NOTE:** You should only copy your plugin DLL, no matter what other files are there, unless you know what you're doing!  
+**NOTE:** You should only copy your plugin DLL, no matter what other files are there, unless you know what you're doing!
+
 Name the file to comply with the base rule #3 and run the game.  
 This is what you should see when running with verbose mode (the `-console` parameter in launch options):  
 ![Console result](http://img.imgland.net/v4BVJ2V.png)  

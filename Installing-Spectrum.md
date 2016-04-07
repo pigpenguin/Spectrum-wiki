@@ -1,4 +1,3 @@
-## Installing Spectrum
 Installing Spectrum is ridiculously easy considering how difficult and tedious it was in earlier versions. Follow this guide to ensure that you have a working Spectrum installation.
 
 #### Downloading Spectrum

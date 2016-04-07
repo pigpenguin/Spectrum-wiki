@@ -75,13 +75,12 @@ As you can see, it's pretty straightforward. Let's have a closer look at the plu
 
 Being armed with that information, let's write an obligatory "Hello, World!" plug-in, shall we? The plugin will show "Hello, world!" text to the right of the player's car when a race starts.  
 To do that: 
-  1. Add the following to the top (where the `using` directives are):  
+  * Add the following to the top (where the `using` directives are):  
 ```C#
 using Spectrum.API.Game;
 using Spectrum.API.Game.Vehicle;
 ```
-
- 2. Then simply add the following to the `Initialize(IManager manager)` method:  
+  * Then simply add the following to the `Initialize(IManager manager)` method:  
 ```C#
 Race.Started += (sender, args) => { LocalVehicle.HUD.SetHUDText("Hello, world!"); };
 ```

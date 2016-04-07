@@ -62,7 +62,7 @@ As you can see, it's pretty straightforward. Let's have a closer look at the plu
 
 | Property name  | Type | Description  |
 | :---: | :---: | :--- |
-| ```FriendlyName```  | System.String  | Holds information on how Spectrum will display your plugin's name. It can be any length and can contain any characters.  |
+| ```FriendlyName```  | `System.String`  | Holds information on how Spectrum will display your plugin's name. It can be any length and can contain any characters.  |
 | `Author` | `System.String` | A place where you can put your name/nickname/whatever points to you as a creator. |
 | `Contact`  | `System.String`  | You can put anything that can be used to contact you. JIDs, webpages, e-mails. Anything that allows communication with you in case somebody wants to submit a bug, etc. |
 | `CompatibleAPILevel` | `Spectrum.API.APILevel` | Holds information for which version of the API the plugin has been made for. |

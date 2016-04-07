@@ -15,7 +15,7 @@ The second option is to use the command line client. Simply issue the following 
 `git clone https://github.com/Ciastex/Spectrum.git`
 
 #### Opening the project
-Locate the project source directory and open `Spectrum.sln`. This will cause Visual Studio 2015 to open and shortly you will be able to write your code improvements and, hopefully, after thoroughly reading [the contribution guidelines](not-yet.implemented), make a [pull request](https://github.com/Ciastex/Spectrum/pulls).
+Locate the project source directory and open `Spectrum.sln`. This will cause Visual Studio 2015 to open and shortly you will be able to write your code improvements and, hopefully, after thoroughly reading [the contribution guidelines](https://github.com/Ciastex/Spectrum/wiki/Contribution-guidelines), make a [pull request](https://github.com/Ciastex/Spectrum/pulls).
 
 ## Troubleshooting
 #### After opening the project I get undefined references and other warnings.

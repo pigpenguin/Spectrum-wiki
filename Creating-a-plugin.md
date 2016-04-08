@@ -44,7 +44,7 @@ namespace TutorialPlugin
         public string FriendlyName => "Tutorial Plugin";
         public string Author => "AnAwesomeDeveloper";
         public string Contact => "anawesomedev@example.com";
-        public APILevel CompatibleAPILevel => APILevel.RadioWave;
+        public APILevel CompatibleAPILevel => APILevel.MicroWave;
 
         public void Initialize(IManager manager)
         {

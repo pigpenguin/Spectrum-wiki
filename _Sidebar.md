@@ -4,6 +4,6 @@
  * **Developer's Manual**
    - [Creating a Patch](https://github.com/Ciastex/Spectrum/wiki/Creating-a-patch)
    - [Creating a Plugin](https://github.com/Ciastex/Spectrum/wiki/Creating-a-plugin)
-   - [Compiling Spectrum](https://github.com/Ciastex/Spectrum/wiki/Building-Spectrum-from-source)
+   - [Compiling Spectrum](https://github.com/Ciastex/Spectrum/wiki/Compiling-Spectrum)
  * **Troubleshooting**
    - [Running Prism](https://github.com/Ciastex/Spectrum/wiki/Troubleshooting-Prism)

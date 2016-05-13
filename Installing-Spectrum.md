@@ -10,7 +10,7 @@ Extract both folders to this directory.
 
 #### Running Prism
 Now enter the `Managed` directory. Depending on whether you're running Linux/OS X or Windows, run the `spectrum_install_linux.sh` or `spectrum_install_windows.bat`, respectively. Wait until the output looks like the following:
-![Spectrum Installer Result](http://img02.imgland.net/wFt6DxK.png)  
+![Spectrum Installer Result](http://img04.imgland.net/nVUilI2.png)  
 If your output does not look like the above, then you most probably didn't read this guide carefully enough. If you're sure the problem is on our side, feel free to [file a bug](https://github.com/Ciastex/Spectrum/issues).
 
 That's it. Your Distance installation is now fully prepared for client-side modifications. Enjoy your Spectrum-enhanced Distance experience.

@@ -5,5 +5,7 @@
    - [Creating a Patch](https://github.com/Ciastex/Spectrum/wiki/Creating-a-patch)
    - [Creating a Plugin](https://github.com/Ciastex/Spectrum/wiki/Creating-a-plugin)
    - [Compiling Spectrum](https://github.com/Ciastex/Spectrum/wiki/Compiling-Spectrum)
+* **Contributing**
+   - [Reporting a Bug](https://github.com/Ciastex/Spectrum/wiki/Reporting-bugs)
  * **Troubleshooting**
    - [Running Prism](https://github.com/Ciastex/Spectrum/wiki/Troubleshooting-Prism)

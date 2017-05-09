@@ -52,6 +52,12 @@ var myValueFoo = _settings.GetItem<int>("foo"); // foo was integer type
 var myValueBar = _settings.GetItem<Section>("section").GetItem<string>("bar");
 ```
 
+### Saving settings
+A method called `Save(bool formatJson = true)` is used to save a settings file to a hard disk. The `formatJson` parameter is used to determine whether or not you want your file to be pretty-printed for easy reading and manual modification and defaults to `true` if not provided:
+```CSharp
+_settings.Save();
+```
+
 ## Conclusion
 After finishing this part of tutorial, you should have a fair understanding of the settings facility exposed by Spectrum.
 
@@ -88,6 +94,8 @@ namespace ExamplePlugin
 
             var myValueFoo = _settings.GetItem<int>("foo"); // foo was integer type
             var myValueBar = _settings.GetItem<Section>("section").GetItem<string>("bar");
+
+            _settings.Save();
 
             Console.WriteLine("Hello, world.");
         }

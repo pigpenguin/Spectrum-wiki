@@ -2,7 +2,6 @@
  * **The Basics**
    - [Installing Spectrum](https://github.com/Ciastex/Spectrum/wiki/Installing-Spectrum)
  * **Developer's Manual**
-   - [Creating a Patch](https://github.com/Ciastex/Spectrum/wiki/Creating-a-patch)
    - [Creating a Plugin](https://github.com/Ciastex/Spectrum/wiki/Creating-a-plugin)
    - [Compiling Spectrum](https://github.com/Ciastex/Spectrum/wiki/Compiling-Spectrum)
  * **Contributing**

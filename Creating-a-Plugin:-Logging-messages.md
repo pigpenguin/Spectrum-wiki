@@ -39,7 +39,7 @@ Spectrum provides you with a few methods for logging the data depending on its s
 `Error(string message)` writes a message using standard error appearance.   
 `Warning(string message)` writes a message using standard warning appearance.   
 `Info(string message)` writes a message using standard information appearance.   
-`Exception(Exception e)` pretty-prints an exception you provide it.
+`Exception(Exception e)` pretty-prints an exception you provide it.    
 `ExceptionSilent(Exception e)` does not care about `WriteToConsole` property. Useful for hiding exceptions you don't care about that much to see them in real time.
 
 ## Conclusion

@@ -1,3 +1,8 @@
+### OUTDATED PLUGIN CREATION METHOD
+Spectrum Gamma changes the plugin creation process drastically. An update wiki page is in the works.
+
+***
+
 This wiki page aims to explain the basic environment setup of every Spectrum plugin. This page was last updated for the Spectrum Ultraviolet release.
 
 ## Creating the Project

@@ -1,14 +1,14 @@
 Spectrum API provides you with a JSON-based plugin-specific settings manager. This wiki page aims to explain how to correctly utilize this capability. To keep things simple, this guide will use example project setup used in [this part](https://github.com/Ciastex/Spectrum/wiki/Creating-a-Plugin:-The-Basics).
 
 ## Introduction
-The settings manager allows each plugin to have multiple settings files distinguished by a postfix. The postfix is defaults to `string.Empty`. The `Settings` class resides in the `Spectrum.API.Configuration` namespace.
+The settings manager allows each plugin to have multiple settings in its own private settings directory.
 
 The `Settings` constructor prototype is:   
 ```CSharp
-public Settings(Type type, string postfix = "")
+public Settings(string fileName)
 ```
 ### Standard behavior
-Upon correct object creation, Spectrum generates an empty JSON file following the `$"{PluginName}.{postfix}.json"` template if postfix is provided, or `$"{PluginName}.json"` if the postfix is empty. The files are created in `%DISTANCE_PATH%\Distance_Data\Spectrum\Settings` folder.
+After providing the constructor with file name without extension, it's created in `%DISTANCE_PATH%\Distance_Data\Spectrum\%PLUGIN_DIRECTORY%\Settings` directory.
 If an error occurs, you will be notified in the development console.
 
 ## Code structure
@@ -21,7 +21,7 @@ This will allow you to initialize and access your settings file.
 
 In the `Initialize(IManager manager)` method, add the following line on top of the method:
 ```CSharp
-_settings = new Settings(typeof(Entry));
+_settings = new Settings("mySettingsFile");
 ```
 This is the standard way of creating your settings file.
 
@@ -73,16 +73,11 @@ namespace ExamplePlugin
 {
     public class Entry : IPlugin
     {
-        public string FriendlyName => "Example Plugin";
-        public string Author => "someone";
-        public string Contact => "contact@example.com";
-        public APILevel CompatibleAPILevel => APILevel.UltraViolet;
-
         private Settings _settings;
 
         public void Initialize(IManager manager)
         {
-            _settings = new Settings(typeof(Entry));
+            _settings = new Settings("mySettings");
 
             _settings.Add("foo", 123);
             // ^equivalent: _settings["foo"] = 123;
@@ -98,11 +93,6 @@ namespace ExamplePlugin
             _settings.Save();
 
             Console.WriteLine("Hello, world.");
-        }
-
-        public void Shutdown()
-        {
-
         }
     }
 }

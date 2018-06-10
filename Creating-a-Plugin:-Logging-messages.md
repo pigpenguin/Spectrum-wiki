@@ -1,7 +1,7 @@
 There are times you need to debug something with data being saved after the game quits, as development console closes as soon as the game shuts down. Spectrum provides you with a facility to do just that. To keep things simple, this guide will use default plugin set-up described in [this part](https://github.com/Ciastex/Spectrum/wiki/Creating-a-Plugin:-The-Basics).
 
 ## Introduction
-Spectrum saves its log files in the `%DISTANCE_PATH%\Distance_Data\Spectrum\Logs` folder. Plugins can use the `Logger(string fileName)` object to log their diagnostic data in there. The `Logger` class is located inside the `Spectrum.API.Logging` namespace.
+Plugins can use the `Logger` class to log their diagnostic data in plugin's private Logs directory. The `Logger` class is located inside the `Spectrum.API.Logging` namespace.
 
 The `Logger` constructor prototype is:
 ```CSharp
@@ -56,11 +56,6 @@ namespace ExamplePlugin
 {
     public class Entry : IPlugin
     {
-        public string FriendlyName => "Example Plugin";
-        public string Author => "someone";
-        public string Contact => "contact@example.com";
-        public APILevel CompatibleAPILevel => APILevel.UltraViolet;
-
         private Logger _logger;
 
         public void Initialize(IManager manager)
@@ -72,11 +67,6 @@ namespace ExamplePlugin
             _logger.Warning("A catastrophic error could occur but it did not.");
             _logger.Info("It works.");
             _logger.Exception(new Exception("A message of exception."));
-        }
-
-        public void Shutdown()
-        {
-
         }
     }
 }

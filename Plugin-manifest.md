@@ -17,8 +17,6 @@ Since Spectrum Gamma, plugins have to provide an additional JSON-based manifest 
     "Dependencies": []
 }
 ```
-
-### Property description
 |Property|Description|
 |--------:|:-----------|
 |`FriendlyName`|Plugin's display name. End-user will see this when Spectrum loads your plugin.|

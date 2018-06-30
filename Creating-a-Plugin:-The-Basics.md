@@ -15,7 +15,7 @@ namespace ExamplePlugin
 {
     public class Entry : IPlugin
     {
-        public void Initialize(IManager manager)
+        public void Initialize(IManager manager, string ipcIdentifier)
         {
 
         }

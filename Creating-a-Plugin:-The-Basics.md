@@ -22,7 +22,7 @@ namespace ExamplePlugin
     }
 }
 ```
-The plugin has only one initialization method `Initialize(IManager manager)` and is executed only once, when your plugin is loaded. You can set up settings, register events, hook to engine, and so on in here.   
+The plugin has only one initialization method `Initialize(IManager manager, string ipcIdentifier)` and is executed only once, when your plugin is loaded. You can set up settings, register events, hook to engine, and so on in here.   
 
 ### Adding some code
 In the `using` section of your code, add the following line:

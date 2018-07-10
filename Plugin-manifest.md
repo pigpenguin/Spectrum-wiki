@@ -13,6 +13,7 @@ Since Spectrum Gamma, plugins have to provide an additional JSON-based manifest 
     "EntryClassName": "Entry",
     
     "Priority": 10,
+    "SkipLoad": false,
     
     "Dependencies": []
 }
@@ -27,4 +28,6 @@ Since Spectrum Gamma, plugins have to provide an additional JSON-based manifest 
 |`ModuleFileName`|Tells Spectrum which file contains your plugin code. The file must not reside in any subdirectories.|
 |`EntryClassName`|Tells Spectrum which class in your plugin contains the initialization code.|
 |`Priority`|Defines the load order. Higher priority means higher place on the internal load list.|
+|`SkipLoad`|Tells Spectrum not to load a plugin.|
 |`Dependencies`|A JSON array of strings. Defines which files from `Dependencies/` directory of your plugin to load.|
+
